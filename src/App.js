@@ -7,7 +7,7 @@ const Trailer = ({ data }) => (
   <a href={data.url}
      target="_blank"
      rel="noopener noreferrer">
-    trailer...
+    Trailer...
   </a>
 );
 
@@ -26,11 +26,11 @@ const moviesConfig = [
     title: 'rating',
     field: 'imdbRating',
   },
- // {
- //   title: 'trailer',
- //   field: 'Trailer',
- //   component: Trailer
- // }
+ {
+   title: 'trailer',
+   field: 'Trailer',
+   component: Trailer
+ }
 ];
 
 const pokemonConfig = [
@@ -41,9 +41,10 @@ const pokemonConfig = [
   {
     title: 'name',
     field: 'name',
-  //   component: PokemonName
+    component: PokemonName
   },
 ];
+
 
 const App = () => (
   <div>
