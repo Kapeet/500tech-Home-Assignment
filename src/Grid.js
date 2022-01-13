@@ -9,11 +9,10 @@ const Grid = ({ config, data }) => {
     const key = Object.values(object)[0]; 
     const fields = config.map(configObject => {
       const TableCellComponent = configObject.component;
-      const currentValue = object[configObject.field];
-      const isComponent = Object.values(configObject).length > 2;
+      const currentTableCellValue = object[configObject.field];
       return (
         <td key={key+configObject.field}>
-          {isComponent ? <TableCellComponent key={key} data={currentValue}/> : currentValue}
+          {configObject.component ? <TableCellComponent key={key} data={currentTableCellValue}/> : currentTableCellValue}
         </td>
       )
     });
