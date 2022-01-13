@@ -38,11 +38,11 @@ const pokemonConfig = [
     title: 'pokedex #',
     field: 'number'
   },
-  // {
-  //   title: 'name',
-  //   field: 'name',
+  {
+    title: 'name',
+    field: 'name',
   //   component: PokemonName
-  // },
+  },
 ];
 
 const App = () => (
